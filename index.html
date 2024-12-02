@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코딩네컷 실전연습</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        width: 390px;
+        background-color: #ff9d73;
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 30px;
+      }
+
+      .photo-frame {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #fff;
+        margin: 15px 20px;
+        height: 200px;
+        cursor: pointer;
+      }
+
+      #image1 {
+        background-image: url("./cat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      #image2 {
+        background-image: url("./copybara.jpg");
+      }
+
+      #image3 {
+        background-image: url("./dog.jpg");
+      }
+
+      #image4 {
+        background-image: url("./duck.jpg");
+      }
+
+      .photo_description {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        /* opacity: 0; */
+      }
+
+      .video {
+        width: 100%;
+        height: 100%;
+      }
+
+      .showText {
+        opacity: 1;
+      }
+
+      .hideText {
+        opacity: 0;
+        transition: opacity 0.5s linear;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+      }
+
+      .f-date {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photos">
+        <div id="image1" class="photo-frame">
+          <span id="dec1" class="photo_description"
+            >먹이가 없어 빡친 고양이</span
+          >
+        </div>
+        <div id="image2" class="photo-frame">
+          <span id="dec2" class="photo_description"
+            >여유로운 카피바라 가족들</span
+          >
+        </div>
+        <div id="image3" class="photo-frame">
+          <span id="dec3" class="photo_description">산책에 신난 웰시코기</span>
+        </div>
+        <div class="photo-frame">
+          <iframe
+            src="https://www.youtube.com/embed/0dafj6B6wLE"
+            title="[초저가]5백원대 소고기라면에 소고기 왕창 넣고 7봉지로 영양 보충하고 밥말아묵자"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="video"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="f-title">Happy Lunch Time</p>
+        <p class="f-date">2025.01.25</p>
+      </div>
+    </div>
+  </body>
+</html>
